@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Completed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ваш заказ @ViewBag.id был успешно создан и принят в работу.</h2>
+@Html.ActionLink("Детали заказа", "Details", new { id = ViewBag.Id }) ||
+@Html.ActionLink("Меню", "Index", "Pizzas", null)
+
